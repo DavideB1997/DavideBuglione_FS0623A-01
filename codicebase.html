@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="it"><!--lingua della pagina per screen reader e altro-->
+
+<head>
+    <!--l'ordine dei meta non ha impatto-->
+    <meta charset="utf-8">
+    <meta name="description" content="Elenco dei tag principali in HTML e i loro comportamenti di default">
+    <!--Limite 160 caratteri-->
+    <title>Elenco dei tag HTML</title>
+</head>
+
+<body>
+    <div id="navigazione">
+        <h2>Menu navigazione</h2>
+        <nav>
+            <ul>
+                <li><a href="Esercizio D1/index.html"> Home</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1> Lezione!</h1>
+    <p>Questa è la prima lezione svolta il 23/10/2023 c'è molto codice commentato che sono le note ho preso durante questa lezione.</p>
+
+    <h1>Elenco dei tag HTML e funzionalità</h1> <!--titolo -->
+    <!-- <p>paragrafo, più utilizzo di <br> per forzare il ritorno a capo, un grassetto<strong></strong> può aiutare come ancora visiva,parole che necessitano enfasi in una lingua diversa da quella generale <i lang="en"></i>-->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis <strong>nostrud</strong> exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+        <!--Alt+W tramite estensione htmltagwrap -->
+        <strong>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+        </strong>
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.<br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.
+    <p>enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p> Duis aute irure dolor in <strong>reprehenderit</strong> in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+    laborum.
+    </p>
+
+
+    <p>per stampare premi <kbd>ctrl + p</kbd> oppure inserisci il tag <code>&lt;kbd&gt;</code></p>
+
+    <!-- titolo di importanza inferiore rispetto a h1 -->
+    <h2> Elementi blocco</h2> 
+    <p>Si comportano in questo modo:</p>
+
+    <!-- type="A" per dare un ordine letterale e non numerico(ma se l'attributo cambia l'estetica va fatto tramite .css) -->
+    <ul>
+        <li> Hanno uno spazio loro</li>
+        <li> occupano tutto lo spazio orizzontale</li>
+    </ul>
+
+    <!-- ul>li*2 emmet abbreviation per fare una lista con annidato l'elemento list con * per moltiplicare il quantitativo di tag all'interno -->
+
+    <!-- qui abbiamo utilizzato & per aggiungere il simbolo copyright -->
+    <address>Azienza XY-via roma - P.IVA 0210201- &copy; copy 2023</address>
+
+    <!-- concetti immagini -->
+
+    <!-- immagine raster - immagine vettoriale
+    raster = pixel modi mosaico (da alterarle il meno possibile nella dimensione al massimo rimpicciolirla) ( pincipalmente foto jpg,gif...) // contro= se zoomata si sgrana.
+
+    vettoriale = immagini frutto di un calcolo matematico (non sgranerà mai se ridimensionata) (pincipalemnte icone e simili .svg)
+
+    la differenza fra i diversi .formati è principalmente la velocità di caricamento dell'immagine, per migliorare il tempo di reazione dell'sito.
+
+    WebP= nuovo formato con la stessa qualità di jpeg ma pesa meno.
+
+
+
+    Markup Immagini 
+    <img src="sorgente della imm" alt="testo fallback alternativo" width="#" height="#">
+    
+    percorso non relativo alla root:
+
+        src="nomepic.jpg" se la imm è sullo stesso livello
+
+        src="assets/images/nomepic.jpg" percorso relativo in base alla posizione della pagina. // ../ per tornare alla cartella prima //
+
+        src="sito con protocollo" per trovare una imm al di fuori del locale.
+
+    un'altro modo è tag <figure>
+
+        <figure>
+            <img src="immagine.jpg" alt="nomealt" width="#" height="250">
+            <figcaption>descrizione immagine</figcaption>
+        </figure>
+
+    figure è usato anche come blockquote.
+
+        <figure>
+            <blockquote cite="sito">fra in particolare citata e copiata </blockquote>
+            <figcaption> Libro html per tutti - pag.4</figcaption>
+        </figure>
+
+    Markup Links
+
+    <a href="hypertext reference" title="breve descrizione pagina" target"_blank" rel="nofollow">vai alla pagina dedicata</a> 
+        target="_blank" se aprire la pagina in una altra scheda 
+        rel="nofollow" non trasferisci credibilità 
+    
+        è possibile utilizzare anche img clicabile per avviare un link
+
+              **nota**  non usare sottolineature se non per links.
+
+        
+      percorsi non relativi alla root:
+
+        stesso livello
+        <a href="contatti.html">
+
+        scendere di livello
+        <a href="servizi/consulenza.html">
+
+        salire di livello
+        <a href="../index.html">
+
+    con percorsi relativi alla root, serve webserve locale.
+        <a href="/servizi/consulenza.html"
+
+        attributi A
+
+        email<a href="mailto:segreteria@epicode.school", 
+        file word,file pdf, file zip, file eseguibile, whatsapp(trovabile nel sito whatsapp).
+
+    
+    
+    ancora interna
+
+    <a href="#correlati" title="guarda gli altri articoli">articoli correlati</a>
+    <p>testo vario presnete fra i 2 elementi<p>
+    <a id="correlati"> ti riporta sopra alla pagina.
+
+
+    struttura semantica menu di navigazione    
+    <ul>
+        <li><a href="link1">link1</a><li>
+        <li><a href="link2">link2</a><li>
+        <li><a href="link3">link3</a><li>
+    </ul>
+
+
+    
+        
+    
+    
+    -->
+
+
+
+
+</body>
+
+</html>
